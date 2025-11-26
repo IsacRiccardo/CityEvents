@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover city events near you on an interactive map">
+  <title>City Events Map</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Maplibre GL CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🗺️ City Events</h1>
+    <p class="subtitle">Explore events happening in your city</p>
+  </header>
+
+  <main>
+    <div id="map" role="region" aria-label="Event map"></div>
+    <button id="locate-btn" class="locate-btn" title="Go to my location" aria-label="Go to my location">
+      <i class="fas fa-location-dot"></i>
+    </button>
+    <div id="loading" class="loading">Loading events...</div>
+    <div id="error" class="error" style="display: none;"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 City Events. Built with Maplibre GL.</p>
+  </footer>
+
+  <!-- Maplibre GL JS -->
+  <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
